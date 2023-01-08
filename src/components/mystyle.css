@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: #41bdd0;
+  font-family:monospace;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 4px whitesmoke;
+}
+#title{
+    font-size: 40px;
+}
+.pwdgen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#result,
+#clipboard {
+    font-size: 30px;
+    padding: 0.5% 0%;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vh 36vw;
+  font-size: 20px;
+}
+.setting #length {
+    font-size: 18px;
+}
+#length{
+    border: 2px solid #43C6DB;
+}
+#generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin: 2% 37.6%;
+  font-size: 25px;
+  border: 3px solid #43C6DB;
+}
+@media (max-width: 1050px) {
+  .setting {
+    margin: 1vh 30vw;
+  }
+  #generate{
+    margin: 2% 32.7%;
+  }
+}
+@media (max-width: 735px) {
+  .setting {
+    margin: 1vh 24vw;
+  }
+  #generate{
+    margin: 2% 27.65%;
+  }
+}
+@media (max-width: 560px) {
+  .setting {
+    margin: 1vh 18vw;
+  }
+  #generate{
+    margin: 2% 22.70%;
+  }
+}
+@media (max-width: 455px) {
+  .setting {
+    margin: 1vh 10vw;
+  }
+  #generate{
+    margin: 2% 16.25%;
+  }
+}
+@media (max-width: 365px) {
+  .setting {
+    margin: 1vh 4vw;
+  }
+  #generate{
+    margin: 2% 11.05%;
+  }
+}
+@media (max-width: 315px) {
+  .setting {
+    margin: 1vh 0vw;
+    font-size: 18px;
+  }
+  #generate{
+    margin: 2% 5%;
+  }
+}
