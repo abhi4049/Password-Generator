@@ -1,98 +1,114 @@
 * {
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  color: #41bdd0;
-  font-family:monospace;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+body {
+  /* background-color: #000; */
+  background-image: url('https://media.istockphoto.com/id/139890219/photo/bubbles.jpg?b=1&s=170667a&w=0&k=20&c=EfX32Fkxnj6xGG17TJekicG6SI0g2lmNLdYcfEZRyag=');
+  /* background-image: ; */
   background-repeat: no-repeat;
   background-size: cover;
-  text-shadow: 0 0 4px whitesmoke;
-}
-#title{
-    font-size: 40px;
-}
-.pwdgen {
+  color: #41bdd0;
   display: flex;
+  font-family:'Poppins';
   flex-direction: column;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
 }
-#result,
-#clipboard {
-    font-size: 30px;
-    padding: 0.5% 0%;
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+input[type="checkbox"] {
+  margin-right: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.833);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.result-container {
+  background-color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 23px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  text-shadow: 0.6px 0.6px #41bdd0;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.btn {
+  background-color: #000;
+  color: #41bdd0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  width: 100%;
+}
+#generate{
+  background-color:#000;
+  color: #41bdd0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px #41bdd0;
+  font-size: 20px;
+}
+#generate:hover{
+  box-shadow: 0px 0px 15px yellow;
 }
 .setting {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vh 36vw;
-  font-size: 20px;
+  margin: 15px 0;
+  font-size: 22px;
 }
-.setting #length {
-    font-size: 18px;
-}
-#length{
-    border: 2px solid #43C6DB;
-}
-#generate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
-  margin: 2% 37.6%;
-  font-size: 25px;
-  border: 3px solid #43C6DB;
-}
-@media (max-width: 1050px) {
-  .setting {
-    margin: 1vh 30vw;
-  }
-  #generate{
-    margin: 2% 32.7%;
+
+@media screen and (max-width: 400px) {
+  .pwdgen{
+    padding-left: 40px;
   }
 }
-@media (max-width: 735px) {
-  .setting {
-    margin: 1vh 24vw;
-  }
-  #generate{
-    margin: 2% 27.65%;
-  }
-}
-@media (max-width: 560px) {
-  .setting {
-    margin: 1vh 18vw;
-  }
-  #generate{
-    margin: 2% 22.70%;
-  }
-}
-@media (max-width: 455px) {
-  .setting {
-    margin: 1vh 10vw;
-  }
-  #generate{
-    margin: 2% 16.25%;
-  }
-}
-@media (max-width: 365px) {
-  .setting {
-    margin: 1vh 4vw;
-  }
-  #generate{
-    margin: 2% 11.05%;
-  }
-}
-@media (max-width: 315px) {
-  .setting {
-    margin: 1vh 0vw;
-    font-size: 18px;
-  }
-  #generate{
-    margin: 2% 5%;
+
+@media screen and (max-width: 400px) {
+  .pwdgen{
+    padding-left: 50px;
   }
 }
