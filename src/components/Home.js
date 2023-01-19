@@ -75,10 +75,6 @@ const Home = () => {
         return symbols[random(0, symbols.length - 1)]
     }
 
-    // useEffect(() => {
-    //     generatePassword()
-    // }, [])
-
     return (
         <section className="container">
             <h2>Password Generator</h2>
