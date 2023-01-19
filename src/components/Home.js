@@ -4,10 +4,10 @@ import "./mystyle.css";
 const Home = () => {
     const [password, setPassword] = useState('')
     const [passwordLength, setPasswordLength] = useState(15)
-    const [uppercase, setUppercase] = useState(true)
-    const [lowercase, setLowercase] = useState(true)
-    const [numbers, setNumbers] = useState(true)
-    const [symbols, setSymbols] = useState(true)
+    const [uppercase, setUppercase] = useState(false)
+    const [lowercase, setLowercase] = useState(false)
+    const [numbers, setNumbers] = useState(false)
+    const [symbols, setSymbols] = useState(false)
     const [errors, setErrors] = useState({})
 
     const copyToClipboard = () => {
@@ -75,9 +75,9 @@ const Home = () => {
         return symbols[random(0, symbols.length - 1)]
     }
 
-    useEffect(() => {
-        generatePassword()
-    }, [])
+    // useEffect(() => {
+    //     generatePassword()
+    // }, [])
 
     return (
         <section className="container">
